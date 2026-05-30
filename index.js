@@ -5,8 +5,7 @@ const cors = require("cors");
 const Groq = require("groq-sdk");
 
 // ✅ Handle both export styles of pdf-parse
-const pdfParseLib = require("pdf-parse");
-const pdfParse = typeof pdfParseLib === "function" ? pdfParseLib : pdfParseLib.default;
+const pdfParse = require("pdf-parse");
 
 const app = express();
 const PORT = process.env.PORT || 4000;
